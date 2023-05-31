@@ -1,0 +1,25 @@
+.flex{
+    height: 400px;
+    display: flex;
+    /*justify-content: space-around;*/
+    /*justify-content: space-between;*/
+    justify-content: space-evenly;
+    align-items: center;
+   /* 
+   Flex direction forza a la forma de su atributo, en este caso, forza a formar columnas
+    flex-wrap: wrap;
+    flex-direction: column;
+    La siguiente líne hace lo mismo que las dos anteriores juntas*/
+    flex-flow: column wrap;
+}
+.flex > div{
+width: 100px;
+margin: 20px;
+text-align: center;
+font-size: 1.5rem;
+border: 3px solid var(--secondary);
+background-color: var(--info);
+}
+#div4{
+ order: -1;   
+}

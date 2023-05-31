@@ -1,0 +1,21 @@
+.grid{
+    /*Cada auto es una división de las 12 
+    colunmas*/
+    display: grid;
+    gap: 20px;
+    /*grid-template-columns: auto 200px 400px;*/
+    /*Para no escribir mucho auto podemos*/
+    grid-template-columns: repeat(3, 80px);
+    height: 400px;
+    align-content: center;
+
+}
+.grid>div{
+    text-align: center;
+    border: 3px solid var(--primary);
+}
+.item1{
+   /* grid-column: 2/3;*/
+   /*en esta etiqueta empezamos con #fila d/e inicio/#columna final/#Filas que abarca7#columnas que abarca*/
+     grid-area: 1/2/5/6;
+}

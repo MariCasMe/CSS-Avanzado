@@ -1,0 +1,54 @@
+:root{
+    --primary: #6d5353;
+    --secondary: #D5B4B4;
+    --info: #E4D0D0;
+    --contrast: #F5EBEB;
+
+} 
+body{
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--contrast);
+}
+div{
+    padding: 10px 30px 10px 0px;
+    color: var(--primary);
+    background-color: var(--info);
+    border: solid 4px var(--secondary);
+}
+.container{
+    height: 1500px;
+}
+
+.estatico{
+    /*Static es el posicionamiento default de html y no
+     se ve afectado por los atributos top, bottom, right o left*/
+    position: static;
+    top: 200px;
+}
+.relative{
+    /*Relative se modifica su posición a partir de la posición natural estática*/
+    position: relative;
+    /*bottom: 50px;*/   
+}
+.fixed{
+    /*Coloca elementos en el espacio estrictamente necesario
+    no lo tenemos en su pisción natural, si no, toma la pocsición del ViewPort(lo que
+    se ve en la página, lo que se muestra en pantalla) PAra el VP tenemos dos dimensiones VW (viwew width) y VH(view high)*/
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+
+}
+.absolute{
+    /*La posición está basada en el elemeto que la contiene, no toma en cuenta el WP para top, bottom, left o right*/
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+}
+.sticky{
+    /*Coloca al elemento en relación al viewport,
+    Si usando scroll legamos a la posicion del elemento sticky, se va a mantener disponible en el viewport hasta el final de nuestra pagina*/
+    position: sticky;
+    top: 0px;
+}

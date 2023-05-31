@@ -1,0 +1,18 @@
+.media{
+    text-align: center;
+}
+/*@media (orientation: landscape)  indica que cuando se cumple lo que está entre paréntesis 
+    se cumple lo que está dentro de la llave
+    {
+    h1{
+        color: var(--secondary);
+        font-size: 3rem;
+    }
+}*/
+
+@media (max-width: 500px) {
+    h1 {
+        color: var(--primary);
+        font-size: 3rem;
+    }
+}

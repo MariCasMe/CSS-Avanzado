@@ -1,0 +1,16 @@
+.inline{
+    /*Forza al elemento para que esté en la misma línea.
+    no se ve afectado por alturas ni otros atributos de posición, 
+    pues fuerza estar en un parrafo.*/
+    display: inline;
+    font-size: 1.5rem;
+    height: 200px;
+}
+.block{
+    /*forza a un elemento a tomar una nueva linea*/
+    display: block;
+}
+.none{
+    /*No se va a renderizar*/
+    display: none;
+}
